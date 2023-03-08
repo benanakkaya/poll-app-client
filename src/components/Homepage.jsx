@@ -9,7 +9,7 @@ export default function Homepage() {
     const [lastPolls,setLastPolls] = useState([]);
 
     const fetchLastPolls = async () => {
-        const res = await axios.get("http://localhost:5000/polls/fetchLastPolls");
+        const res = await axios.get("https://difficult-red-binturong.cyclic.app/polls/fetchLastPolls");
         setLastPolls(res.data.polls)
     }
 
