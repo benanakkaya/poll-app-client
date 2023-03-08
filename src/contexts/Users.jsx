@@ -32,7 +32,7 @@ export default function Users(props) {
     }, [])
 
     const fetchLoginnedUserData = async (id) => {
-        await axios.post("http://localhost:5000/users/fetchUserData", { id }).then((res) => {
+        await axios.post("https://difficult-red-binturong.cyclic.app/users/fetchUserData", { id }).then((res) => {
             setLoginnedUser(res.data.userData)
         })
     }
