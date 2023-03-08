@@ -22,7 +22,7 @@ export default function Register() {
             birthday: ""
         },
         onSubmit: async (values) => {
-            await axios.post("http://localhost:5000/users/register",
+            await axios.post("https://difficult-red-binturong.cyclic.app/users/register",
                 {
                     username: values.username,
                     password: values.password,
