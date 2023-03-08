@@ -26,7 +26,7 @@ export default function Poll({ poll }) {
             choiceID: null
         },
         onSubmit: async (values) => {
-            await axios.post("http://localhost:5000/polls/votePoll", { pollID: poll._id, choiceID: values.choiceID })
+            await axios.post("https://difficult-red-binturong.cyclic.app/polls/votePoll", { pollID: poll._id, choiceID: values.choiceID })
             setVoted(true);
             const newVotedPolls = [...votedPolls,poll._id];
             setVotedPolls(newVotedPolls);
