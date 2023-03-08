@@ -14,7 +14,7 @@ export default function Homepage() {
     const { votedPolls } = useContext(UsersContext);
 
     const fetchAllPolls = async () => {
-        const res = await axios.get("http://localhost:5000/polls/fetchAllPolls");
+        const res = await axios.get("https://difficult-red-binturong.cyclic.app/polls/fetchAllPolls");
         setLastPolls(res.data.polls)
         return res.data.polls;
     }
