@@ -48,7 +48,7 @@ export default function PollResults({ poll, showResult, setShowResult }) {
     };
 
     const fetchPollResult = async (pollID) => {
-        const res = await axios.post("http://localhost:5000/polls/fetchPollResult", { pollID });
+        const res = await axios.post("https://difficult-red-binturong.cyclic.app/polls/fetchPollResult", { pollID });
         setUpdatedPoll(res.data.results)
     }
 
