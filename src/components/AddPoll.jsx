@@ -19,7 +19,7 @@ export default function AddPoll() {
       expiresDate: null
     },
     onSubmit: async (values) => {
-      await axios.post("http://localhost:5000/polls/addPoll",
+      await axios.post("https://difficult-red-binturong.cyclic.app/polls/addPoll",
         {
           title: values.title,
           category: values.category,
