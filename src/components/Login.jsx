@@ -19,7 +19,7 @@ export default function Login() {
       password: ""
     },
     onSubmit: async (values) => {
-      await axios.post("http://localhost:5000/users/login",
+      await axios.post("https://difficult-red-binturong.cyclic.app/users/login",
         {
           username: values.username,
           password: values.password
